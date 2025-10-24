@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Markov Chain Text Analysis Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Remove extra whitespace at bottom of main content */
+        #main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+        .actions.special { margin-bottom: 0 !important; }
+        footer#footer { display: none; }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Sefton Edwards Portfolio</a></h1>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Project Detail -->
+            <article class="post">
+                <header class="major">
+                    <span class="date">Fall 2025</span>
+                    <h1>Markov Chain Text Analysis Project</h1>
+                    <p></p>
+                </header>
+
+                <div class="image main">
+                    <img src="images/Markov.jpg" alt="Markov Chain Project" />
+                </div>
+
+                <h2 style="text-align: center; margin-top: 1em;">Introduction</h2>
+
+                <p>I set out to investigate how text structure could reveal statistical relationships between letters using C++ and probability principles. My objective was to model the likelihood of vowels and consonants following each other within a large text sample, using the framework of a Markov chain. The idea stemmed from observing how language often contains predictable patterns that can be quantified mathematically. I wanted to build a program capable of analyzing these transitions at the character level to demonstrate how conditional probabilities emerge naturally in written text. This effort combined programming, data analysis, and computational modeling to uncover measurable relationships within English writing.</p>
+
+                <!-- Alternating Image and Text Section -->
+                <section id="two" class="wrapper alt style2" style="background: white; padding: 2em; display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+
+                    <div style="display: flex; align-items: center; max-width: 1000px; gap: 2em;">
+                        <div class="image" style="flex: 1;">
+                            <img src="images/V5.jpg" alt="" style="width: 200px; height: auto;" />
+                        </div>
+                        <div class="content" style="flex: 2;">
+                            <h2>Problem</h2>
+                            <p>The problem I aimed to solve was determining how likely a vowel or consonant was to be followed by another of the same or opposite type in a body of text. This required designing a computational system capable of reading through thousands of characters, classifying each, and keeping an accurate count of all character pairings.</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; max-width: 1000px; gap: 2em; flex-direction: row-reverse;">
+                        <div class="image" style="flex: 1;">
+                            <img src="images/V1.jpg" alt="" style="width: 200px; height: auto;" />
+                        </div>
+                        <div class="content" style="flex: 2;">
+                            <h2>Action</h2>
+                            <p>I decided to design a C++ program that would process a text file, identify vowels and consonants, and record transition frequencies. I planned the structure around modular functions and data encapsulation to keep the code organized and verifiable.</p>
+                        </div>
+                    </div>
+
+                    <div class="image main">
+                        <img src="images/V3.jpg" alt="Markov Chain Project" />
+                    </div>
+
+                    <h2 style="text-align: center; margin-top: -1em;">Process</h2>
+
+                    <p>To begin, I implemented Boolean functions to identify whether a given character was a vowel or consonant. I then used loops and conditional statements to iterate through each character in Moby-Dick, counting all consecutive pairs and storing the results in integer matrices. Once the counts were complete, I used floating-point matrices to calculate and normalize transition probabilities for the four key relationships: VV, VC, CV, and CC. Debugging tools were integrated to log intermediate values and verify that all probability sums equaled one, ensuring accuracy.</p>
+
+                    <div style="display: flex; align-items: center; max-width: 1000px; gap: 2em;">
+                        <div class="image" style="flex: 1;">
+                            <img src="images/V4.jpg" alt="" style="width: 200px; height: auto;" />
+                        </div>
+                        <div class="content" style="flex: 2;">
+                            <h2>Result</h2>
+                            <p>The final program successfully processed more than 50,000 characters, generating detailed probability matrices that accurately reflected the frequency and direction of vowel–consonant transitions. The resulting data aligned with linguistic expectations, showing that consonant-to-vowel transitions were most common, consistent with natural English phonetic structure.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="image main">
+                    <img src="images/V2.jpg" alt="Markov Chain Project" />
+                </div>
+
+                <h2 style="text-align: center; margin-top: 1em;">Reflection</h2>
+                <p>Through this project, I strengthened my understanding of how code structure and data representation can influence analytical accuracy. I gained practical experience with file I/O, matrix manipulation, and runtime debugging within C++. The process taught me the importance of building software incrementally and verifying each part through clear, testable outputs. I also saw how mathematical models like Markov chains could be implemented from first principles without advanced libraries. Overall, this experience enhanced my ability to translate conceptual probability problems into functional and verifiable code systems.</p>
+
+                <ul class="actions special" style="margin-bottom:0;">
+                    <li><a href="index.html" class="button">Back to Projects</a></li>
+                </ul>
+
+            </article>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; 2025 Sefton Edwards — Electrical Engineering Portfolio
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Digital Logic & FSM Circuit Modeling</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Remove extra whitespace at bottom of main content */
+        #main { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+        .actions.special { margin-bottom: 0 !important; }
+        footer#footer { display: none; }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Sefton Edwards Portfolio</a></h1>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Motion Control Detail -->
+            <article class="post">
+                <header class="major">
+                    <span class="date">Summer 2025</span>
+                    <h1>Digital Logic & FSM Circuit Modeling</h1>
+                    <p></p>
+                </header>
+
+                <div class="image main">
+                    <img src="images/2020.jpg" alt="Motion Control Project" />
+                </div>
+
+                <h2 style="text-align: center; margin-top: 1em;">Introduction</h2>
+
+                <p>In this project, I designed and simulated two digital logic systems using Multisim: a gate-restricted combinational circuit and a finite state machine (FSM). The combinational circuit was built using only NAND gates and inverting decoders, while the FSM was designed to perform defined state transitions based on input and clock signals. Both simulations demonstrated combinational logic's role in creating predictable digital behavior.</p>
+
+                <!-- Alternating Image and Text Section -->
+                <section id="two" class="wrapper alt style2" style="background: white; padding: 2em; display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+
+                    <div style="display: flex; align-items: center; max-width: 1000px; gap: 2em;">
+                        <div class="image" style="flex: 1;">
+                            <img src="images/Screenshot 2025-10-24 145004.jpg" alt="" style="width: 200px; height: auto;" />
+                        </div>
+                        <div class="content" style="flex: 2;">
+                            <h2>Problem</h2>
+                            <p>The project had two main goals. First, to design a combinational circuit using only restricted logic gates that performed specific Boolean functions. Second, to design a three-state FSM that accurately transitioned between states based on input signals and the current stored state. Both circuits needed to operate reliably and match theoretical expectations in simulation.</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; max-width: 1000px; gap: 2em; flex-direction: row-reverse;">
+                        <div class="image" style="flex: 1;">
+                            <img src="images/P3.jpg" alt="" style="width: 200px; height: auto;" />
+                        </div>
+                        <div class="content" style="flex: 2;">
+                            <h2>Action</h2>
+                            <p>For the combinational component, I derived Boolean expressions for the desired logic functions and implemented them using NAND gates and again with NOR and NOT gates, being sure to convert into equivalent gates. Each signal path was labeled to ensure clarity during simulation, and the outputs were tested for correctness under all input conditions. For the FSM component, I mapped a state diagram and created a state transition table for three states. Two D flip-flops were used to store the current state, and a 3-to-8 decoder with inverted outputs generated the next-state logic. The clock, input, set, and reset signals were connected to interactive digital constants, and the FSM was advanced manually to verify each state transition against the theoretical model.</p>
+                        </div>
+                    </div>
+
+                    <div class="image main">
+                        <img src="images/Screenshot 2025-10-24 145027.jpg" alt="Motion Control Project" />
+                    </div>
+
+                    <h2 style="text-align: center; margin-top: -1em;">Process</h2>
+
+                    <p>I began by mapping the state transition diagram and truth table, defining three distinct states represented by two binary outputs (S1, S0). Using Multisim’s Misc-Dig TIL library, I placed and connected the core components: a 3-to-8 decoder with inverted outputs, two edge-triggered D flip-flops for state storage, and a network of NAND gates for combinational logic. Each decoder output represented a unique state condition, and NAND gates were configured both as inverters and logical conjunctions to generate next-state equations. I synchronized both flip-flops with a shared clock input, using interactive digital constants for the clock, set, reset, and input signals. I then manually toggled the clock to advance the FSM one state at a time, verifying each transition matched the theoretical model. Each connection was labeled for signal clarity, and iterative simulations were performed to confirm timing accuracy and logical consistency.</p>
+
+                    <div style="display: flex; align-items: center; max-width: 1000px; gap: 2em;">
+                        <div class="image" style="flex: 1;">
+                            <img src="images/P2.jpg" alt="" style="width: 200px; height: auto;" />
+                        </div>
+                        <div class="content" style="flex: 2;">
+                            <h2>Result</h2>
+                            <p>The combinational circuit correctly implemented the desired logic functions using gate restrictions. The FSM successfully cycled through all three states according to the state table, with outputs changing correctly on positive clock edges. Both components operated reliably, confirming the accuracy of the designs in simulation.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="image main">
+                    <img src="images/P5.jpg" alt="Motion Control Project" />
+                </div>
+
+                <h2 style="text-align: center; margin-top: 1em;">Reflection</h2>
+                <p>This project improved my understanding of the relationship between combinational and sequential logic. Building the circuits in two separate modules helped clarify how individual logical functions contribute to overall system behavior. Working with restricted gates reinforced Boolean simplification and careful labeling, while the FSM simulation highlighted the importance of clock timing and initialization. Overall, the project provided practical experience in moving from theoretical design to functional digital systems.</p>
+            
+                <ul class="actions special" style="margin-bottom:0;">
+                    <li><a href="index.html" class="button">Back to Projects</a></li>
+                </ul>
+
+            </article>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; 2025 Sefton Edwards — Electrical Engineering Portfolio
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
